@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>BOOTSTRAP 2</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+<!--    navigation-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">
+          <i class="fa fa-calendar"></i>
+        Note</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">BROWSE EVENTS</a></li>
+        <li><a href="#">HOST EVENT</a></li> 
+      </ul>
+      <button class="btn navbar-btn navbar-right">Button</button>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>JOHN DOE</span><i style="text-indent: 10px" class="fa fa-user"></i>
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="glyphicon glyphicon-home" style="margin-right: 5px"></i> Personal Home</a></li>
+            </ul>
+          </li>
+<!--        <li><a href="#"><button class="navbar-btn btn">CREATE EVENT</button></a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--site-->
+    <div id="site">
+        <div class="container text-center">
+            <h1 class="heading-1">BROWSE EVENT</h1>
+            <h1 class="heading-2">Events Classified</h1>
+            <div class="input-group">
+            <input type="text" placeholder="Search event nearby..">
+            <input type="text" placeholder="City or Location..">
+            <input type="button" value="Search">
+            </div>    
+        </div>
+    </div>
+<!--feature-->
+    <div id="feature">
+       <div class="container">
+            <h1 class="text-center">FEATURED EVENTS IN NEWYORK</h1>
+            <div class="row">
+                <div class="col-md-3 col-xs-12 col-sm-6">
+                    <div class="thumbnail">
+                       <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/features1.jpg" alt="" class="img-responsive">
+                            <div class="schedule">
+                               <p class="tag">feature</p>
+                                <p class="h4">$120.00</p>
+                                <p>by Sports Olc</p>
+                                <p><i class="fas fa-calendar-alt"></i> Starts on Fri, Jan 19</p>
+                            </div>
+                        </div>
+                        <p>The Ultimate Deal On Race</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-6">
+                    <div class="thumbnail">
+                       <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/features2.jpg" alt="" class="img-responsive">
+                            <div class="schedule">
+                               <p class="tag">feature</p>
+                                <p class="h4">$120.00</p>
+                                <p>by Sports Olc</p>
+                                <p><i class="fas fa-calendar-alt"></i> Starts on Fri, Jan 19</p>
+                            </div>
+                        </div>
+                        <p>The Ultimate Deal On Race</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-6">
+                    <div class="thumbnail">
+                       <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/features3.jpg" alt="" class="img-responsive">
+                            <div class="schedule">
+                               <p class="tag">feature</p>
+                                <p class="h4">$120.00</p>
+                                <p>by Sports Olc</p>
+                                <p><i class="fas fa-calendar-alt"></i> Starts on Fri, Jan 19</p>
+                            </div>
+                        </div>
+                        <p>The Ultimate Deal On Race</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-6">
+                    <div class="thumbnail">
+                       <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/features4.jpg" alt="" class="img-responsive">
+                            <div class="schedule">
+                               <p class="tag">feature</p>
+                                <p class="h4">$120.00</p>
+                                <p>by Sports Olc</p>
+                                <p><i class="fas fa-calendar-alt"></i> Starts on Fri, Jan 19</p>
+                            </div>
+                        </div>
+                        <p>The Ultimate Deal On Race</p>
+                    </div>
+                </div>
+            </div>
+           
+       </div>
+    </div>
+<!--explore-->
+    <div id="explore">
+        <div class="container">
+            <div class="row">
+                   <div class="col-md-4">
+                        <h2>EXPLORE YOUR EVENTS</h2>
+                   </div>
+                   <div class="col-md-8">
+                       <div class="col-md-3 col-sm-6 col-xs-12 btn-group">
+                           <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">FEATURED EVENT
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Featured Event</a></li>
+                              <li><a href="#">New added</a></li>
+                              <li><a href="#">Popular</a></li>
+                              <li><a href="#">Recommended</a></li>
+                            </ul>
+                       </div>
+                       <div class="col-md-3 col-xs-12 col-sm-6 btn-group">
+                           <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">BY DATE
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Featured Event</a></li>
+                              <li><a href="#">New added</a></li>
+                              <li><a href="#">Popular</a></li>
+                              <li><a href="#">Recommended</a></li>
+                            </ul>
+                       </div>
+                       <div class="col-md-3 col-xs-12 col-sm-6 btn-group">
+                           <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">BY LOCATION
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Featured Event</a></li>
+                              <li><a href="#">New added</a></li>
+                              <li><a href="#">Popular</a></li>
+                              <li><a href="#">Recommended</a></li>
+                            </ul>
+                       </div>
+                       <div class="col-md-3 col-xs-12 col-sm-6 btn-group dropup">
+                           <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">BY CATEGORY
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Featured Event</a></li>
+                              <li><a href="#">New added</a></li>
+                              <li><a href="#">Popular</a></li>
+                              <li><a href="#">Recommended</a></li>
+                            </ul>
+                       </div>
+                   </div>
+                   
+<!--
+                   <div class="col-sm-6 col-md-3 btn-group">
+                       
+                   </div>
+-->
+            </div>
+            <div class="row collect">
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='FREE'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event1.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='$292'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event2.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='$354'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event3.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='FREE'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event4.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='FREE'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event5.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='FREE'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event6.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='FREE'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event7.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='FREE'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event8.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="thumbnail" data-tag='FREE'>
+                        <div class="wrapper">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/event9.jpg" alt="" class="img-responsive">
+                            <div class="rate">
+                               <p class="tag">TOP RATED</p>
+                                <p class="h4">FREE</p>
+                                <p>by Viagrand</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p>5.0 | 101 review</p>
+                            </div>
+                        </div>
+                        <p>Exercitation consequat aliqua et nulla nostrud duis mollit</p>
+                        <p><i class=" fas fa-map-marker-alt"></i><span> Valle, Louisiana, 1259</span></p>
+                        <p><i class="fas fa-calendar-alt"><span> 2018-03-19 03:08pm</span></i></p>
+                        <div>
+                        <span>by <strong>Parrish Zamora</strong></span>
+                        <span class="pull-right"><i class="fas fa-share-alt"></i> <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <button class="btn btn-lg btn-default"><i class="glyphicon glyphicon-plus"></i><span>Load More </span></button>
+            </div>
+        </div>
+    </div>
+<!--category-->
+    <div id="category">
+        <div class="container text-center">
+            <h1>EXPLORE BY CATEGORY</h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-1" data-tag='Fitness'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-2" data-tag='Travel'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-3" data-tag='Music'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-4" data-tag='Learning'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-5" data-tag='Photography'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-6" data-tag='Opera'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-7" data-tag='Tenis'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-8" data-tag='Education'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-9" data-tag='Running'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-10" data-tag='Videos Game'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-11" data-tag='Fashion & Beauty'></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="wrapper ca-12" data-tag='Food'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--contact-->
+    <div id="contact">
+        <div class="anylist">
+           <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                        <div class="icon col-xs-6">
+                            <i class="fa fa-group"></i>
+                        </div>
+                        <div class="number col-xs-6">
+                            <p class="lead">100+</p>
+                            <p>EVENTS</p>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                        <div class="icon col-xs-6">
+                            <i class="glyphicon glyphicon-th-large"></i>
+                        </div>
+                        <div class="number col-xs-6">
+                            <p class="lead">100+</p>
+                            <p>CATEGORY</p>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                        <div class="icon col-xs-6">
+                            <i class="fa fa-map"></i>
+                        </div>
+                        <div class="number col-xs-6">
+                            <p class="lead">100+</p>
+                            <p>LOCATION</p>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                        <div class="icon col-xs-6">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div class="number col-xs-6">
+                            <p class="lead">100+</p>
+                            <p>FACEBOOK FANS</p>
+                        </div>
+                    </div>                    
+                </div>
+           </div>
+        </div>
+        <div class="call">
+            <div class="container text-center">
+                <p class="lead">If you have any questions, comments or concerns, please call the Classified Advertising department at (000) 555-5556</p>
+                <button class="btn"><span class=""></span> <span> Call now: (000) 555-5555</span></button>
+            </div>
+        </div>
+    </div>
+<!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-10 col-sm-offset-2 col-md-offset-0">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3">
+                            <p class="lead">ABOUT US</p>
+                            <p>About Company</p>
+                            <p>For Business</p>
+                            <p>Our Partners</p>
+                            <p>Press Contact</p>
+                            <p>Careers</p>
+                            <p>Events</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p class="lead">HELP & CONTACT</p>
+                            <p>Stay Safe Online</p>
+                            <p>How to Sell</p>
+                            <p>How to Buy</p>
+                            <p>Posting Rules</p>
+                            <p>Promote Your Ad</p>
+                        </div>
+                        
+                        <div class="clearfix visible-xs-block visible-sm-block"></div>
+                        
+                        <div class="col-xs-6 col-md-3">
+                            <p class="lead">MORE FROM US</p>
+                            <p>FAQ</p>
+                            <p>Blog</p>
+                            <p>Popular Searches</p>
+                            <p>Site Map</p>
+                            <p>Customer Reviews</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p class="lead">ACCOUNT</p>
+                            <p>Manage Account</p>
+                            <p>Login</p>
+                            <p>Register</p>
+                            <p>My ads</p>
+                            <p>Profile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-10 col-sm-offset-2 col-md-offset-0">
+                    <p class="lead">MOBILE APPS</p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/appstore.svg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-xs-6">
+                            <img src="https://ducphuc1202.github.io/bootstrap3/images/googleplay.svg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <p class="lead">FOLLOW US ON</p>
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+<!--
+    
+--> 

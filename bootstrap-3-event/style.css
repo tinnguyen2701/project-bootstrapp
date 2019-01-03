@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico');
+body{
+    font-family: 'Lato';
+    background-color: #e8e8e8;
+}
+
+/*navigation*/
+.navbar{
+    padding: 1% 0;
+    transition: 500ms ease;
+}
+.navbar-btn{
+    background-color: #2ECC71 !important;
+    color: whitesmoke;
+    font-size: 15px;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand i{
+    margin-right: 15px;
+    background-color: #138a72;
+    border-radius: 50%;
+    padding: 7px;
+    color: whitesmoke;
+}
+/*site*/
+#site{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/banner1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+}
+#site h1{
+    color: whitesmoke;
+}
+#site .heading-2{
+    font-size: 50px;
+    padding:  0 0 3% 0;
+}
+#site .input-group{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#site input[type='text']:nth-child(1){
+    padding: 10px 20px;
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/input1.png');
+    background-repeat: no-repeat;
+    background-position: -4px 4px;
+    border: none;
+    outline: none;
+}
+#site input[type='text']:nth-child(2){
+    padding: 10px 20px;
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/input2.png');
+    background-repeat: no-repeat;
+    background-position: -4px 7px;
+    border: none;
+    outline: none;
+}
+#site input[type='button']{
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background: linear-gradient(158deg, #16A085 44%, #2ECC71 85%);
+}
+
+/*feature*/
+#feature{
+    padding: 3% 0;
+}
+#feature .wrapper{
+    position: relative;
+}
+#feature .schedule{
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 25%;
+    text-align:center;
+    color: whitesmoke;
+    transition: 200ms all;
+    opacity: 0;
+}
+#feature .schedule .tag{
+    background-color: green;
+    border-radius: 10px;
+    padding: 0 5px;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    transition: 200ms all;
+}
+#feature .schedule:hover .tag{
+    top: 15%;
+}
+#feature .schedule:hover{
+    padding-top: 20%;
+    opacity: 1;
+}
+
+/*explore*/
+#explore{
+    padding: 3% 0;
+}
+#explore .row button{
+    margin-top: 20px;
+}
+
+#explore .thumbnail{
+    position: relative;
+}
+#explore .thumbnail::after{
+    content:attr(data-tag);
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    color: black;
+    background-color: #e8e8e8;
+    padding: 2px;
+}
+#explore .wrapper{
+    position: relative;
+}
+#explore .wrapper .rate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 25%;
+    transition: 200ms all;
+    opacity: 0;
+}
+#explore .wrapper:hover .rate{
+    padding-top: 20%;
+}
+#explore .wrapper .tag{
+    background-color: red;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    transition: 200ms all;
+    padding: 2px;
+}
+#explore .wrapper:hover .tag{
+    top: 10%;
+}
+#explore .wrapper:hover .rate{
+    opacity: 1;
+    z-index: 999;
+}
+
+/*category*/
+#category{
+    padding: 3% 0;
+}
+#category .wrapper::after{
+    position: absolute;
+    content: attr(data-tag);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 23px;
+    transition: 200ms all;
+}
+#category .wrapper:hover::after{
+    background-color: rgba(0,0,0,.5);
+    font-size: 26px;
+}
+#category .wrapper{
+    position: relative;
+    height: 160px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+#category .ca-1{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate1.jpeg');
+    background-size: cover;
+}
+#category .ca-2{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate2.jpeg');
+    background-size: cover;
+}
+#category .ca-3{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate3.jpeg');
+    background-size: cover;
+}
+#category .ca-4{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate4.jpeg');
+    background-size: cover;
+}
+#category .ca-5{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate5.jpeg');
+    background-size: cover;
+}
+#category .ca-6{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate6.jpeg');
+    background-size: cover;
+}
+#category .ca-7{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate7.jpeg');
+    background-size: cover;
+}
+#category .ca-8{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate8.jpeg');
+    background-size: cover;
+}
+#category .ca-9{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate9.jpeg');
+    background-size: cover;
+}
+#category .ca-10{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate10.jpeg');
+    background-size: cover;
+}
+#category .ca-11{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate11.jpeg');
+    background-size: cover;
+}
+#category .ca-12{
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/cate12.jpeg');
+    background-size: cover;
+}
+
+/*contact*/
+#contact{
+    padding: 3% 0;
+}
+#contact .anylist{
+    padding: 5% 0;
+    background-image: url('https://ducphuc1202.github.io/bootstrap3/images/bg-analyst.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: whitesmoke;
+}
+#contact .anylist .number{
+    border-left: 1px solid rgba(255,255,255,.7);
+}
+#contact .anylist .icon{
+    color: #138a72;
+    font-size: 36px;
+    padding-top: 3%;
+}
+#contact .call{
+    background: linear-gradient(158deg, #16A085 44%, #2ECC71 85%) no-repeat 0 0 #16A085;
+    padding: 8% 0;
+    color: whitesmoke;
+}
+#contact .call button{
+    background-color: #107360;
+    padding: 1% 3%;
+    font-size: 20px;
+}
+#contact .call .lead{
+    font-size: 25px;
+}
+
+/*footer*/
+footer{
+    padding: 3% 0;
+}
+footer .social{
+     padding: 2%;   
+}
+footer .social i{
+    color: whitesmoke;
+    padding: 10px;
+}
+footer .social i{
+    margin: 0 5px 0 5px;
+}
+footer .fa-facebook{
+    background-color: #007bb5;
+}
+.fa-pinterest{
+    background-color: #cb2027;
+}
+.fa-twitter{
+    background-color: #55acee;
+}
+.fa-google{
+    background-color: #dd4b39;
+}
+.fa-linkedin{
+    background-color: #007bb5;
+}
+/*responsive*/
+@media screen and (max-width: 601px){
+}
+@media screen and (max-width: 415px){
+    #explore .collect .col-xs-6{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/*
+
+input group de~ sat' input lai voi nhau
+dung` background-image thay vi` phai~ label>i
+them row bao thang` button lai roi`text-center
+<div class="clearfix visible-xs-block"></div> : cách để phía trước có tính block
+*/
