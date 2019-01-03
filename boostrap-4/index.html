@@ -1,0 +1,644 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>BOOTSTRAP 4</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  </head>
+  <body>
+<!--  navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#" style="display: flex; justify-content: center; align-items: center"><img src="https://ducphuc1202.github.io/bootstrap2/images/logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">HOME
+                <span class="fa fa-chevron-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#home">DEFAULT</a></li>
+                  <li><a href="#">SUBSCRIBE FORM</a></li>
+                </ul>
+            </li>
+            <li><a href="#feature">FEATURE</a></li>
+            <li><a href="#download">DOWNLOAD</a></li> 
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#" class="btn btn-primary btn-xs">LOGIN</a></li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="top" style="position: fixed; top: 93%; left: 95%; background-color: #0984E3; width: 30px; height: 30px;display: flex; justify-content: center; align-items: center; z-index: 999; opacity: 0; transition: 300ms">
+        <a href="#home"><i class="fa fa-chevron-up" style="color: whitesmoke"></i></a>
+    </div>
+<!--        home -->
+   <div id="home">
+       <div class="container">
+          <div class="row">
+               <div class="col-md-8">
+                   <h1 class="title">Let your dreams start today</h1>
+                   <p class="lead desc">Appland is completely creative, lightweight, clean & super responsive app landing page. Put your app sales or promotions into next level with it.</p>
+                   <button class="btn btn-lg btn-primary">START A FREE TRIAL</button>
+               </div>
+              <div class="col-md-4 text-center">
+                  <img src="https://ducphuc1202.github.io/bootstrap2/images/banner.png" alt="" class="img-responsive">
+              </div>
+          </div>
+       </div>
+   </div>
+<!--   feature-->
+    <div id="feature">
+<!--      bright -->
+       <div class="bright">
+            <div class="container text-center">
+                <h1>Bright Features</h1>
+                <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                <div class="row">
+                   <div class="col-md-5">
+                       <div class="jumbotron-1 toTop">
+                           <p class="h2">Simple & Light</p>
+                           <p class="h3">Lorem Ipsum is simply dummy text of the printing</p>
+                           <div class="icon hidden-xs">
+                                <i class="pe-7s-leaf"></i>
+                            </div>
+                       </div>
+                       <div class="jumbotron-2 toTop">
+                           <p class="h2">Simple & Light</p>
+                           <p class="h3">Lorem Ipsum is simply dummy text of the printing</p>
+                           <div class="icon hidden-xs">
+                                <i class="pe-7s-bicycle"></i>
+                            </div>
+                       </div>
+                       <div class="jumbotron-3 toTop">
+                           <p class="h2">Simple & Light</p>
+                           <p class="h3">Lorem Ipsum is simply dummy text of the printing</p>
+                           <div class="icon hidden-xs">
+                                <i class="pe-7s-science"></i>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="col-md-6 col-md-offset-1 col-xs-8 col-xs-offset-3">
+                       <img src="https://ducphuc1202.github.io/bootstrap2/images/features-img.png" alt="" class="img-responsive" style="width: 55%;">
+                   </div>
+                </div>
+            </div>
+       </div>
+<!--       introducing --> -->
+        <div class="introducing">
+           <div class="container-fluid text-center">
+               <h1>Introducing Apland App</h1>
+               <p>Watch video. It's takes 24sec only.</p>
+                <button type="button" class="play-video btn" data-toggle='modal' data-target='#video'>
+                    <i class="fa fa-play"></i>
+                </button>
+                
+                <div class="modal" tabindex="-1" id="video">
+                     <div class="modal-dialog modal-lg">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <button class="close" data-dismiss='modal'>&times;</button>
+                                 <h4 class="modal-title">modal-title</h4>
+                             </div>
+                             <div class="modal-body">
+                                     <div class="row text-center">
+                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/nHK0u40Ompc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                     </div>
+                             </div>
+                             <div class="modal-footer">
+                                 <button class="btn btn-info" data-dismiss='modal'>Close</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+           </div>
+       </div>
+<!--       about-app -->
+        <div class="about-app">
+          <div class="container">
+               <div class="row">
+                   <div class="col-md-5 col-xs-10 col-sm-10 col-sm-offset-2 col-md-offset-0">
+                      <div class="wrapper">
+                           <img src="https://ducphuc1202.github.io/bootstrap2/images/about-app-1.png" alt="" class="img-responsive">
+                          <img src="https://ducphuc1202.github.io/bootstrap2/images/about-app-2.png" alt="" class="img-responsive toRight">
+                      </div>
+                   </div>
+                   <div class="col-md-7">
+                       <h1>Modern, User Friendly & Powerful Interface</h1>
+                       <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page. Put your app sales or promotions into next level with it.</p>
+                       <button class="btn btn-primary">LEARN MORE</button>
+                   </div>
+               </div>
+          </div>
+       </div>
+<!--       benefits -->
+        <div class="benefits">
+        <div class="container text-center">
+            <h1>Using Benefits</h1>
+            <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 toTop">
+                    <i class="pe-7s-pendrive"></i>
+                    <h1>Simple & Light</h1>
+                    <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 toTop">
+                    <i class="pe-7s-science"></i>
+                    <h1>Stunning Design</h1>
+                    <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 toTop">
+                    <i class="pe-7s-box2"></i>
+                    <h1>Super Responsive</h1>
+                    <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 toTop">
+                    <i class="pe-7s-check"></i>
+                    <h1>100% Clean Code</h1>
+                    <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 toTop">
+                    <i class="pe-7s-paint-bucket"></i>
+                    <h1>10+ Color Variations</h1>
+                    <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 toTop">
+                    <i class="pe-7s-look"></i>
+                    <h1>Retina Ready</h1>
+                    <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--        work -->
+        <div class="work">
+        <div class="container text-center">
+            <h1>How It Works</h1>
+            <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <i class="pe-7s-download"></i>
+                    <p class="lead">Install</p>
+                    <p>Appland is completely creative, lightweight & clean.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <i class="pe-7s-unlock"></i>
+                    <p class="lead">Register</p>
+                    <p>Appland is completely creative, lightweight & clean.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <i class="pe-7s-user"></i>
+                    <p class="lead">Setup Your Profile</p>
+                    <p>Appland is completely creative, lightweight & clean.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <i class="pe-7s-check"></i>
+                    <p class="lead">Done</p>
+                    <p>Appland is completely creative, lightweight & clean.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--        people-say -->
+       <div class="people-say">
+       <div class="container-fluid text-center">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="item active">
+                    <div class="user">
+                       <div class="image">
+                            <img src="https://ducphuc1202.github.io/bootstrap2/images/testimonial-1.jpg" alt="" class="img-responsive">
+                       </div>
+                        <h4>Awesome & Amazing Work. Very Well Organised HTML Template with high quality stunning design. Thank you very much!</h4>
+                        <p><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i></p>
+                        <p class="lead">MD NAZRUL ISLAM</p>
+                        <p>CEO & Founder, Designing World</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                      <div class="user">
+                       <div class="image">
+                            <img src="https://ducphuc1202.github.io/bootstrap2/images/testimonial-2.jpg" alt="" class="img-responsive">
+                       </div>
+                        <h4>Awesome & Amazing Work. Very Well Organised HTML Template with high quality stunning design. Thank you very much!</h4>
+                        <p><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i></p>
+                        <p class="lead">MD NAZRUL ISLAM</p>
+                        <p>CEO & Founder, Designing World</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                      <div class="user">
+                       <div class="image">
+                            <img src="https://ducphuc1202.github.io/bootstrap2/images/testimonial-1.jpg" alt="" class="img-responsive">
+                       </div>
+                        <h4>Awesome & Amazing Work. Very Well Organised HTML Template with high quality stunning design. Thank you very much!</h4>
+                        <p><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i><i class="pe-7s-star"></i></p>
+                        <p class="lead">MD NAZRUL ISLAM</p>
+                        <p>CEO & Founder, Designing World</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+       </div>
+   </div>
+<!--       main-feature -->
+       <div class="main-feature">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6">
+                   <h1>Main Features</h1>
+                   <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                   <div class="row">
+                       <div class="col-xs-3 col-sm-2">
+                           <i class="pe-7s-check"></i>
+                       </div>
+                       <div class="col-xs-7 col-sm-8">
+                           <h3>Simple & Light</h3>
+                           <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-3 col-sm-2">
+                           <i class="pe-7s-science"></i>
+                       </div>
+                       <div class="col-xs-7 col-sm-8">
+                           <h3>Stunning Design</h3>
+                           <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-3 col-sm-2">
+                           <i class="pe-7s-box2"></i>
+                       </div>
+                       <div class="col-xs-7 col-sm-8">
+                           <h3>Super Responsive</h3>
+                           <p>Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <img src="https://ducphuc1202.github.io/bootstrap2/images/features2.png" alt="" class="img-responsive toBottom">
+               </div>
+           </div>
+       </div>
+   </div>
+<!--     app-screen-->
+      <div class="app-screen">
+          <div class="container text-center">
+               <h1>App Screenshots</h1>
+               <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+                <div id="owl-example" class="owl-carousel">
+                 <div class="item">
+                  <img src="https://ducphuc1202.github.io/bootstrap2/images/scr1.png" alt="">
+                 </div>
+                 <div class="item">
+                  <img src="https://ducphuc1202.github.io/bootstrap2/images/scr2.png" alt="">
+                 </div>
+                 <div class="item active-item">
+                  <img src="https://ducphuc1202.github.io/bootstrap2/images/scr3.png" alt="">
+                 </div>
+                 <div class="item">
+                  <img src="https://ducphuc1202.github.io/bootstrap2/images/scr4.png" alt="">
+                 </div>
+                 <div class="item">
+                  <img src="https://ducphuc1202.github.io/bootstrap2/images/scr5.png" alt="">
+                 </div>
+                </div> 
+          </div>
+      </div>
+<!--          pricing -->
+       <div class="pricing">
+       <div class="container text-center">
+             <h1>Pricing Plan</h1>      
+             <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+             <div class="row">
+                 <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                     <div class="panel">
+                         <div class="panel-heading">
+                             <h2>Start-Up</h2>
+                         </div>
+                        <div class="panel-body">
+                             <p>Start A Trial</p>
+                             <p class="money">$0</p>
+                             <p>Duration: 7days</p>
+                             <p>Free Registration</p>
+                             <p>10 Features</p>
+                             <p>No Hidden Fees</p>
+                             <p>100+ Video Tuts</p>
+                             <p>No Tools</p>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-primary">GET STARTED</button>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                     <div class="panel premium-tag">
+                         <div class="panel-heading">
+                             <h2>Prenium</h2>
+                         </div>
+                        <div class="panel-body">
+                             <p>For Small Business Team</p>
+                             <p class="money">$9.99</p>
+                             <p>Duration: 7days</p>
+                             <p>Free Registration</p>
+                             <p>10 Features</p>
+                             <p>No Hidden Fees</p>
+                             <p>100+ Video Tuts</p>
+                             <p>No Tools</p>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-primary">GET STARTED</button>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                     <div class="panel">
+                         <div class="panel-heading">
+                             <h2>Pro</h2>
+                         </div>
+                        <div class="panel-body">
+                             <p>Unlimited Possibilities</p>
+                             <p class="money">$9.99</p>
+                             <p>Duration: 7days</p>
+                             <p>Free Registration</p>
+                             <p>10 Features</p>
+                             <p>No Hidden Fees</p>
+                             <p>100+ Video Tuts</p>
+                             <p>No Tools</p>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-primary">GET STARTED</button>
+                        </div>
+                     </div>
+                 </div>
+             </div>    
+       </div>
+   </div>
+<!--        total-user -->
+       <div class="total-user">
+        <div class="container-fluid text-center">
+            <p class="lead"><span class="user c1">0</span><span class="c2"></span><span class="c3"></span><span> User have been using our Apps successfully.</span></p>
+            <button class="btn btn-primary">GET STARTED</button>
+        </div>
+   </div>
+<!--      create-team -->
+       <div class="create-team">
+       <div class="container">
+           <h1 class="text-center">Creative Team</h1>
+           <p class="text-center lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+           <div class="row">
+               <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                   <img src="https://ducphuc1202.github.io/bootstrap2/images/advisor-1.jpg" alt="" class="img-responsive">
+                   <p class="lead">Samantha Sarah</p>
+                   <p>Founder & CEO</p>
+                   <p>Sarah is creative, honest & hard-working person.</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                   <img src="https://ducphuc1202.github.io/bootstrap2/images/advisor-2.jpg" alt="" class="img-responsive">
+                   <p class="lead">Samantha Sarah</p>
+                   <p>Founder & CEO</p>
+                   <p>Sarah is creative, honest & hard-working person.</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                   <img src="https://ducphuc1202.github.io/bootstrap2/images/advisor-3.jpg" alt="" class="img-responsive">
+                   <p class="lead">Samantha Sarah</p>
+                   <p>Founder & CEO</p>
+                   <p>Sarah is creative, honest & hard-working person.</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+                   <img src="https://ducphuc1202.github.io/bootstrap2/images/advisor-4.jpg" alt="" class="img-responsive">
+                   <p class="lead">Samantha Sarah</p>
+                   <p>Founder & CEO</p>
+                   <p>Sarah is creative, honest & hard-working person.</p>
+               </div>
+           </div>
+       </div>
+   </div> 
+<!--      faq -->
+       <div class="faq">
+           <div class="container">
+               <h1 class='text-center'>Some FAQ</h1>
+               <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+               <div class="row">
+                   <div class="col-sm-7">
+                       <div class="panel">
+                           <div class="panel-heading panel-primary" data-toggle='collapse' data-target='#faq-1'>
+                                <span>HOW CAN I INSTALL THIS APP?</span>
+                                <i class="fa fa-plus pull-right"></i>
+                           </div>
+                           <div class="panel-body collapse" id="faq-1">
+                               <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                           </div>
+                       </div>
+                       <div class="panel">
+                           <div class="panel-heading panel-primary" data-toggle='collapse' data-target='#faq-2'>
+                                <span>WHERE CAN I FIND OUT ABOUT EVENTS?</span>
+                                <i class="fa fa-plus pull-right"></i>
+                           </div>
+                           <div class="panel-body collapse" id="faq-2">
+                               <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                           </div>
+                       </div>
+                       <div class="panel">
+                           <div class="panel-heading panel-primary" data-toggle='collapse' data-target='#faq-3'>
+                                <span>THE APPS ISN'T INSTALLING?</span>
+                                <i class="fa fa-plus pull-right"></i>
+                           </div>
+                           <div class="panel-body collapse" id="faq-3">
+                               <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                           </div>
+                       </div>
+                       <div class="panel">
+                           <div class="panel-heading panel-primary" data-toggle='collapse' data-target='#faq-4'>
+                                <span>CONTACT FORM ISN'T WORKING?</span>
+                                <i class="fa fa-plus pull-right"></i>
+                           </div>
+                           <div class="panel-body collapse" id="faq-4">
+                               <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-sm-3 col-sm-offset-1 text-center">
+                       <p class="lead">Can't find suitable answer?</p>
+                       <p>Ask our support team</p>
+                       <p><button class="btn btn-primary"><i class="fa fa-twitter"></i><span> TWEET US</span></button></p>
+                       <p><button class="btn btn-primary"><i class="fa fa-envelope"></i><span> EMAIL US</span></button></p>
+                   </div>
+               </div>
+       </div>    
+   </div>
+<!--      subscribe -->
+       <div class="subscribe">
+        <div class="container-fluid text-center">
+            <h1>Subscribe To Our Newsletter And Get Update.</h1>
+            <div class="row">
+                <div class="input-group col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+                  <input type="text" placeholder="Your Email Address" class="form-control">
+                  <span class="input-group-btn">
+                      <input type="button" value="Submit" class="btn btn-primary">
+                  </span>
+                </div>
+            </div>
+       </div>
+   </div>
+<!--      history -->
+       <div class="history">
+        <div class="container">
+           <h1 class="text-center">Our History</h1>
+           <p class="lead text-center">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+            <div class="row">
+                <div class="col-sm-6 col-left text-right">
+                    <div class="thumbnail toRight">
+                       <i class="pe-7s-user"></i>
+                        <h3>Reach 200k Users</h3>
+                        <p>Feb 15, 2018</p>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                    </div>
+                    <div class="thumbnail toRight">
+                       <i class="pe-7s-tools"></i>
+                        <h3>Fix bugs</h3>
+                        <p>Feb 15, 2018</p>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                    </div>
+                    <div class="thumbnail toRight">
+                       <i class="pe-7s-settings"></i>
+                        <h3>Make more powerful and stable</h3>
+                        <p>Feb 15, 2018</p>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-right">
+                    <div class="thumbnail toLeft">
+                       <i class="pe-7s-download"></i>
+                        <h3>Update Version 1.3.0</h3>
+                        <p>Feb 15, 2018</p>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                    </div>
+                    <div class="thumbnail toLeft">
+                       <i class="pe-7s-comment"></i>
+                        <h3>Reach 100k Community Members</h3>
+                        <p>Feb 15, 2018</p>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                    </div>
+                    <div class="thumbnail toLeft">
+                       <i class="pe-7s-like"></i>
+                        <h3>Initial Release</h3>
+                        <p>Feb 15, 2018</p>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Nulla facilisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<!--   end feature-->
+       
+<!--   download -->
+    <div id="download">
+        <div class="container text-center">
+            <h1>Download App</h1>
+            <p class="lead">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+            <button class="btn"><i class="fa fa-android"></i><span> Play Store</span></button>
+            <button class="btn"><i class="fa fa-apple"></i><span> App Store</span></button>
+            <button class="btn"><i class="fa fa-windows"></i><span> Window Store</span></button>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <img src="https://ducphuc1202.github.io/bootstrap2/images/download-mobile.png" alt="" class="img-responsive toBottom">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!--   contact -->
+   <div id="contact">
+      <div class="container-fluid contact-map">
+           <div class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.16087742057664!2d107.61077980154826!3d16.446446027538933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a170783998c7%3A0xef0067f6cbd5471c!2zNjIgTmd1eeG7hW4gSOG7r3UgQ-G6o25oLCBUaOG7p3kgRMawxqFuZywgSMawxqFuZyBUaOG7p3ksIFRo4burYSBUaGnDqm4gSHXhur8sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1546143394037" width="600" height="450" style="border:0" allowfullscreen></iframe>
+           </div>
+      </div>
+      <div class="container contact-form">
+          <h1 class="text-center">Write Us</h1>
+          <p class="lead text-center">Appland is completely creative, lightweight, clean & super responsive app landing page.</p>
+             <div class="form-group">
+                  <div class="row">
+                      <div class="col-xs-6">
+                          <input type="text" placeholder="YOUR NAME" class="form-control">
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" placeholder="YOUR EMAIL" class="form-control">
+                      </div>
+                 </div>
+              </div>
+              <div class="form-group">
+                  <div class="row">
+                      <div class="col-xs-6">
+                          <input type="text" placeholder="YOUR NAME" class="form-control">
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" placeholder="YOUR EMAIL" class="form-control">
+                      </div>
+                 </div>
+              </div>
+              <div class="form-group">
+                 <div class="row">
+                    <div class="col-xs-12">
+                         <textarea class="form-control" rows="10"></textarea>
+                    </div>
+                 </div>
+              </div>
+              <button class="btn btn-primary">SEND MESSAGE</button>
+      </div>
+   </div>
+<!--   footer -->
+    <footer>
+            <div class="container">
+                <div class="social text-center">
+                     <a href="#"><i class="fa fa-facebook"></i></a>
+                     <a href="#"><i class="fa fa-google-plus"></i></a>
+                     <a href="#"><i class="fa fa-pinterest"></i></a>
+                     <a href="#"><i class="fa fa-skype"></i></a>
+                     <a href='#'><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="footer-menu text-center">
+                   <ul class="list-unstyle list-inline">
+                       <li><a href="#">ABOUT US</a></li>
+                       <li><a href="#">CORPORATE SALE</a></li>
+                       <li> <a href="#">PRIVACY POLICY</a></li>
+                       <li><a href="#">TERN AND CONDITION</a></li>
+                       <li><a href="#">HELP CENTER</a>  </li>
+                   </ul>
+                </div>
+                <hr>
+                <div class="copyright text-center">
+                    <p class="lead"><span>COPY with  by </span><i class="fa fa-heart"></i><span> by <span style="font-family: 'Pacifico';">Note</span> &copy;</span></p>
+                </div>
+            </div>
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
