@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico');
+body{
+    margin: 0 auto;
+    font-family: 'Lato';
+}
+
+.text-white{
+    color: whitesmoke;
+}
+.text-black{
+    color: black;
+}
+.line{
+    margin-bottom: 3%;
+}
+.line span{
+    border-top: 1px solid tomato;
+    border-bottom: 1px solid tomato;
+    height: 5px;
+    width: 200px;
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line-short span{
+    border-top: 1px solid tomato;
+    border-bottom: 1px solid tomato;
+    height: 5px;
+    width: 100px;
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#about, #team, #process, #portfolio, #testimonials, #contact{
+    padding-top: 5%;
+}
+/*navbar*/
+
+nav{
+    border: none !important;
+    padding: 15px;
+}
+.navbar-black{
+    transition: 1000ms all;
+    background-color: black !important;
+}
+nav.navbar .navbar-brand{
+    font-size: 30px;
+    font-family: 'Pacifico';
+}
+nav.navbar a{
+    color: whitesmoke !important;
+    font-size: 18px;
+}
+nav.navbar a:hover{
+    color: tomato !important;
+}
+nav .dropdown-menu a{
+    color: black !important;
+}
+/*site*/
+#site{
+    background-image: url('http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/bg-masthead.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+#site .container-fluid{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.75);
+}
+
+#site .col-xs-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#site img{
+    width: 170px;
+}
+#site .slidedown{
+    position: absolute;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    transition: 200ms all;
+}
+#site .slidedown a{
+    color: whitesmoke;
+}
+#site .slidedown:hover{
+    transform: translateY(-8px);
+    border: 2px solid rgba(255,255,255,.4);
+}
+
+/*about*/
+#about .col-md-3{
+    margin: 1% 0;
+}
+#about .title, #team .title{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+/*team*/
+#team .container-fluid{
+    padding: 0
+}
+#team .owl-carousel{
+    position: relative;
+}
+#team button.owl-prev, #team button.owl-next{
+    font-size: 50px;
+    color: whitesmoke;
+    background-color: tomato;
+    width: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    display: block;
+    line-height: 50px;
+    position: absolute;
+    top: 40%;
+}
+#team button.owl-next{
+    right: 0;
+}
+#team .item .wrapper{
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255,255,255,.7);
+}
+#team .item .wrapper a{
+    color: whitesmoke;
+}
+#team .item .wrapper li{
+    font-size: 25px;
+    margin: 10px;
+}
+
+#team .bg-quote{
+    background-image: url('http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/bg-callout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 90vh;
+}
+#team .quote{
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    padding: 10% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#team .quote p{
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+#team .quote span{
+    color: tomato;
+}
+#team .quote a{
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 15px;
+    margin-top: 2%;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 250ms all;
+}
+#team .quote a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*process*/
+
+#process .item{
+    display: flex;
+    flex-direction: row;
+}
+#process .icon{
+    width: 72px;
+    height: 72px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#process .content{
+    padding-left: 20px;
+}
+#process .content .name{
+    font-weight: bold;
+    margin-top: 0;
+}
+#process .content ul{
+    padding-left: 20px;
+    font-size: 17px;
+}
+#process .content ul li{
+    padding: 4px 0;
+}
+
+
+/*portfolio*/
+
+#portfolio #project-Carousel .carousel-inner{
+    height: 90vh;
+    width: 100%;
+}
+#portfolio #project-Carousel .item{
+    transform: translateX(0) !important;
+    padding: 0;
+    animation: slide 1s linear;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+}
+#portfolio #project-Carousel .wrapper{
+    height: 100%;
+    padding-top: 12%;
+    background-color: rgba(0,0,0,.6);
+}
+#portfolio #project-Carousel .item-1{
+    background-image: url('http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/carousel/item-1-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+#portfolio #project-Carousel .item-2{
+    background-image: url('http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/carousel/item-2-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+#portfolio #project-Carousel .item-3{
+    background-image: url('http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/carousel/item-3-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+#portfolio #project-Carousel .col-md-8{
+    position: relative;
+    padding: 0;
+}
+#portfolio #project-Carousel .col-md-4{
+    padding-top: 10%;
+}
+#portfolio #project-Carousel .col-md-4 a{
+    color: whitesmoke;
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-size: 15px;
+    transition: 200ms all;
+}
+#portfolio #project-Carousel .col-md-4 a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+#portfolio #project-Carousel .col-md-4 .category{
+    font-size: 20px;
+}
+#portfolio #project-Carousel .col-md-4 .line span{
+    left: 0;
+    transform: translateX(0);
+}
+
+#portfolio .gallery .item{
+    padding: 0;
+    position: relative;
+}
+#portfolio .gallery span.wrapper {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    padding-top: 40%;
+    padding-left: 10%;
+    transition: 200ms all;
+}
+#portfolio .gallery span.content{
+    display: block;
+    width: 90%;
+}
+#portfolio .gallery span.wrapper:hover{
+    background-color: rgba(255,99,71,.8);
+    box-shadow: 15px 15px 0px white inset,
+        -15px -15px 0px white inset; 
+}
+
+#portfolio #testimonials{
+    padding: 5%;
+    user-select: none;
+}
+#portfolio .item{
+    padding: 0 7%;
+}
+#portfolio a.carousel-control{
+    background-color: tomato;
+    background-image: none;
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+}
+#portfolio #testimonials .author{
+    font-weight: 900;
+    font-size: 17px;
+}
+/*subscribe*/
+#subscribe{
+    background-color: black;
+    padding: 7%;
+}
+#subscribe input{
+    padding: 30px;
+    font-size: 17px;
+    border: none;
+}
+#subscribe button{
+    padding: 20px;
+    background-color: tomato;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+/*contact*/
+#contact{
+    padding-bottom: 3%;
+}
+#contact input{
+    border: none;
+    padding: 40px;
+    font-size: 17px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+#contact button{
+    background-color: white;
+    border: 1px solid tomato;
+    color: tomato;
+    padding: 10px 17px;
+    font-size: 15px;
+    margin-top: 2%;
+    font-weight: bold;
+    transition: 250ms all;
+}
+#contact button:hover{
+    color: whitesmoke;
+    background-color: tomato;
+}
+
+/*buy*/
+#buy{
+    background-color: black;
+    padding: 2% 0;
+    transition: 200ms all;
+}
+#buy a{
+    text-decoration: none;
+    color: white;
+}
+#buy:hover{
+    background-color: tomato;
+}
+
+/*footer*/
+footer{
+    background-image: url('http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/bg-footer.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: rgba(255,255,255,.5);
+    background-attachment: fixed;
+}
+footer .container-fluid{
+    background-color: rgba(0,0,0,.6);
+    padding: 10% 10% 2% 10%;
+}
+footer .social{
+    margin: 5% 0;
+}
+footer .social i{
+    margin: 3%;
+}
+footer .social i:hover{
+    color: white;
+}
+/*responsive*/
+@media screen and (min-width: 320px){
+    #site .name{
+        font-weight: bold;
+        font-size: 50px;
+    }
+    nav.navbar{
+        background-color: black;
+    }
+    #portfolio #project-Carousel .image-inner{
+        position: absolute;
+        top: 20px;
+        width: 70%;
+        left: 12%;
+    }
+}
+@media screen and (min-width: 375px){
+    #site .name{
+        font-weight: bold;
+        font-size: 80px;
+    }
+}
+@media screen and (min-width: 414px){
+    #portfolio #project-Carousel .image-inner{
+        position: absolute;
+        top: 30px;
+        width: 75%;
+        left: 12%;
+    }
+    
+}
+@media screen and (min-width: 600px){
+}
+@media screen and (min-width: 768px){
+ 
+}
+@media screen and (min-width: 1280px){
+    nav.navbar{
+        background-color: transparent;
+    }
+    .navbar-nav{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+@media only screen and (width: 768px) {
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-nav li{
+      width: 100%;   
+      padding-left: 0;
+      margin-left: -10px;
+  }
+  
+}

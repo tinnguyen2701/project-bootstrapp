@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>BOOTSTRAP 6</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Converted from less -->
+      <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--    navigation-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#">Note</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#process">Process</a></li> 
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#portfolio">Page 1-1</a></li>
+                  <li><a href="#">Page 1-2</a></li>
+                </ul>
+              </li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--    site-->
+   <section id="site">
+       <div class="container-fluid text-center text-white">
+          <div class="col-xs-6 col-xs-offset-3">
+               <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/logo-masthead.svg" alt="">
+               <h1 class="name">VITALITY</h1>
+               <div class="line"><span></span></div>
+               <h1>by Start Bootstrap</h1>
+               <div class="slidedown">
+                   <a href="#about"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+               </div>
+          </div>
+       </div>
+   </section>
+<!--    about-->
+   <section id="about">
+       <div class="container-fluid text-center">
+           <h1 class="title">A THEME FOR AGENCIES & CREATIVES</h1>
+           <p class="lead">Vitality is the perfect theme for freelance professionals and agencies.</p>
+           <div class="line">
+               <span></span>
+           </div>
+           <div class="row">
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <i class="fas fa-code fa-5x"></i>
+                   <p class="h3">BOOTSTRAP 3</p>
+                   <p class="h4">Unleash the power and flexibility of the newly released Bootstrap 4 when you choose Vitality! One framework, any device.</p>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <i class="fas fa-edit fa-5x"></i>
+                   <p class="h3">EASY TO EDIT</p>
+                   <p class="h4">Vitality is easy to edit and customize and includes SASS core files for deeper customization.</p>
+               </div>
+               <div class="clearfix visible-xs-block visible-sm-block"></div>
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <i class="fas fa-mobile fa-5x"></i>
+                   <p class="h3">RESPONSIVE</p>
+                   <p class="h4">In today's world where devices come in every shape and size, Vitality will responsively adapt to look great on any screen!</p>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <i class="fas fa-heart fa-5x"></i>
+                   <p class="h3">BUILT WITH LOVE</p> 
+                   <p class="h4">All themes by Start Bootstrap are crafted with care. Thank you for choosing Vitality and being a customer!</p>
+               </div>
+           </div>
+       </div>
+   </section>
+<!--   team-->
+   <section id="team">
+       <div class="container-fluid text-center">
+           <h1 class="title">OUR TEAM</h1>
+           <p class="lead">We are a group of digital marketers with a passion for great art that serves a practical purpose.</p>
+           <div class="line"><span></span></div>
+           
+           <div class="container">
+                  <div id="owl-team" class="owl-carousel">
+                       <div class="item">
+                           <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/team/1.jpg" alt="">
+                            <div class="wrapper">
+                                <p class="h2">PATRICIA WEST</p>
+                                <div class="line-short"><span>
+                                </span></div>
+                                <p class="h3">Marketing Director</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div> 
+                       </div>
+                       <div class="item">
+                           <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/team/2.jpg" alt="">
+                           <div class="wrapper">
+                                <p class="h2">HOWARD SCOTT</p>
+                                <div class="line-short"><span>
+                                </span></div>
+                                <p class="h3">Sales Manager</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>     
+                       </div>
+                       <div class="item">
+                           <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/team/3.jpg" alt="">
+                           <div class="wrapper">
+                                <p class="h2">KATE WILIAMS</p>
+                                <div class="line-short"><span>
+                                </span></div>
+                                <p class="h3">Creative Director</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>     
+                       </div>
+                       <div class="item">
+                           <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/team/4.jpg" alt="">
+                           <div class="wrapper">
+                                <p class="h2">PATRICIA WEST</p>
+                                <div class="line-short"><span>
+                                </span></div>
+                                <p class="h3">Marketing Director</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>     
+                       </div>
+                       <div class="item">
+                           <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/team/5.jpg" alt="">
+                           <div class="wrapper">
+                                <p class="h2">PATRICIA WEST</p>
+                                <div class="line-short"><span>
+                                </span></div>
+                                <p class="h3">Marketing Director</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>     
+                       </div>
+                   </div>
+           </div>
+          
+           
+           <div class="bg-quote text-center text-white">
+                <div class="quote">
+                     <p>Good <span>design</span> is finding that perfect balance between the way something <span>looks</span> and how it <span>functions</span>.</p>
+                     <div class="line"><span></span></div>
+                     <a href="" class="btn btn-default">HOW WE WORK</a>
+                </div>
+           </div>
+       </div>
+   </section>
+<!--   process-->
+   <section id="process">
+       <div class="container">
+           <h1 class="title text-center">OUR PROCESS</h1>
+           <p class="lead text-center">Here is an overview of how we approach each new project.</p>
+           <div class="line"><span></span></div>
+           <div class="row">
+               <div class="col-md-4 col-sm-6 item">
+                   <div class="icon">
+                       <i class="fas fa-drafting-compass fa-2x"></i>
+                   </div>
+                   <div class="content">
+                       <p class="name h3">PLAN</p>
+                       <ul>
+                           <li>Client interview</li>
+                           <li>Gather consumer data</li>
+                           <li>Create content strategy</li>
+                           <li>Analyze research</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-md-4 col-sm-6 item">
+                   <div class="icon">
+                       <i class="fas fa-pencil-ruler fa-2x"></i>
+                   </div>
+                   <div class="content">
+                       <p class="name h3">CREATE</p>
+                       <ul>
+                           <li>Build wireframes</li>
+                           <li>Gather client feedback</li>
+                           <li>Application development</li>
+                           <li>Application development</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0 item">
+                   <div class="icon">
+                       <i class="fas fa-rocket fa-2x"></i>
+                   </div>
+                   <div class="content">
+                       <p class="name h3">LAUNCH</p>
+                       <ul>
+                           <li>Deploy website</li>
+                           <li>Market product launch</li>
+                           <li>Collect user data</li>
+                           <li>Quarterly reporting</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+   </section>
+<!--  portfolio-->
+    <section id="portfolio">
+       <div class="container-fluid">
+          <div class="row">
+               <div id="project-Carousel" class="carousel slide" data-ride="carousel" data-interval='false'>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active item-1">
+                        <div class="wrapper text-white">
+                            <div class="container">
+                                <div class="col-md-8">
+                                    <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/css/vendor/html5-device-mockups/device-mockups/MacbookPro/portrait_black.png" alt="" class="img-responsive">
+                                    <div class="image-inner">
+                                        <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/carousel/item-1-img.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h1>PROJECT NAME</h1>
+                                    <p class="category">Project Category</p>
+                                    <div class="line"><span></span></div>
+                                    <a href="" class="btn">VIEW DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <div class="wrapper text-white">
+                            <div class="container">
+                                <div class="col-md-8">
+                                    <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/css/vendor/html5-device-mockups/device-mockups/MacbookPro/portrait_black.png" alt="" class="img-responsive">
+                                    <div class="image-inner">
+                                        <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/carousel/item-2-img.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h1>PROJECT NAME</h1>
+                                    <p class="category">Project Category</p>
+                                    <div class="line"><span></span></div>
+                                    <a href="" class="btn">VIEW DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="wrapper text-white">
+                            <div class="container">
+                                <div class="col-md-8">
+                                    <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/css/vendor/html5-device-mockups/device-mockups/MacbookPro/portrait_black.png" alt="" class="img-responsive">
+                                    <div class="image-inner">
+                                        <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/carousel/item-3-img.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h1>PROJECT NAME</h1>
+                                    <p class="category">Project Category</p>
+                                    <div class="line"><span></span></div>
+                                    <a href="" class="btn">VIEW DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#project-Carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#project-Carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+          </div>
+       </div>
+       
+        <div class="container">
+            <h1 class="title text-center">PORTFOLIO</h1>
+           <p class="lead text-center">Here are some projects that we've worked on.</p>
+           <div class="line"><span></span></div>
+           <div class="row gallery">
+               <div class="col-md-4 col-sm-6 item">
+                       <a data-fancybox="gallery" href="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/1.jpg" data-caption="Caption #1">
+                       <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/1.jpg" class="img-responsive" alt="">
+                       
+                       <span class="wrapper">
+                           <span class="title h4">PROJECT TITLE</span><br>
+                           <span class="content h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                       </span>
+                       </a>
+               </div>
+               <div class="col-md-4 col-sm-6 item">
+                       <a data-fancybox="gallery" href="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/2.jpg" data-caption="Caption #2">
+                       <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/2.jpg" class="img-responsive" alt="">
+                       
+                       <span class="wrapper">
+                           <span class="title h4">PROJECT TITLE</span><br>
+                           <span class="content h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                       </span>
+                       </a>
+               </div>
+               <div class="col-md-4 col-sm-6 item">
+                       <a data-fancybox="gallery" href="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/3.jpg" data-caption="Caption #3">
+                       <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/3.jpg" class="img-responsive" alt="">
+                       
+                       <span class="wrapper">
+                           <span class="title h4">PROJECT TITLE</span><br>
+                           <span class="content h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                       </span>
+                       </a>
+               </div>
+               <div class="col-md-4 col-sm-6 item">
+                       <a data-fancybox="gallery" href="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/4.jpg" data-caption="Caption #4">
+                       <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/4.jpg" class="img-responsive" alt="">
+                       
+                       <span class="wrapper">
+                           <span class="title h4">PROJECT TITLE</span><br>
+                           <span class="content h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                       </span>
+                       </a>
+               </div>
+               <div class="col-md-4 col-sm-6 item">
+                       <a data-fancybox="gallery" href="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/5.jpg" data-caption="Caption #5">
+                       <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/5.jpg" class="img-responsive" alt="">
+                       
+                       <span class="wrapper">
+                           <span class="title h4">PROJECT TITLE</span><br>
+                           <span class="content h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                       </span>
+                       </a>
+               </div>
+               <div class="col-md-4 col-sm-6 item">
+                       <a data-fancybox="gallery" href="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/6.jpg" data-caption="Caption #6">
+                       <img src="http://themes.startbootstrap.com/vitality-v3.0.1/dist/img/portfolio/grid/6.jpg" class="img-responsive" alt="">
+                       
+                       <span class="wrapper">
+                           <span class="title h4">PROJECT TITLE</span><br>
+                           <span class="content h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                       </span>
+                       </a>
+               </div>
+           </div>
+        </div>
+
+       <div class="container text-center" id="testimonials">
+           <div id="ceo-Carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                    <div class="item active">
+                        <h1 class="text-uppercase">"Vitality is a well coded, well documented, and easy to use theme!"</h1>
+                        <div class="line"><span></span></div>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquid magni quam perspiciatis in. Atque facilis saepe, accusantium in voluptate doloremque neque dolores provident amet error, ipsam, voluptatibus similique quasi.</p>
+                        <p class="author">Karen Jones</p>
+                        <p class="authority">CEO of Company Name</p>
+                    </div>
+
+                    <div class="item">
+                        <h1 class="text-uppercase">"Vitality is a well coded, well documented, and easy to use theme!"</h1>
+                        <div class="line"><span></span></div>
+                        <p class='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquid magni quam perspiciatis in. Atque facilis saepe, accusantium in voluptate doloremque neque dolores provident amet error, ipsam, voluptatibus similique quasi.</p>
+                        <p class="author">Karen Jones</p>
+                        <p class="authority">CEO of Company Name</p>
+                    </div>
+
+                    <div class="item">
+                        <h1 class="text-uppercase">"Vitality is a well coded, well documented, and easy to use theme!"</h1>
+                        <div class="line"><span></span></div>
+                        <p class='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquid magni quam perspiciatis in. Atque facilis saepe, accusantium in voluptate doloremque neque dolores provident amet error, ipsam, voluptatibus similique quasi.</p>
+                        <p class="author">Karen Jones</p>
+                        <p class="authority">CEO of Company Name</p>
+                    </div>
+              </div>
+
+              <a class="left carousel-control" href="#ceo-Carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" style="font-size: 20px"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#ceo-Carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" style="font-size: 20px"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+       </div>
+    </section>
+<!--    subscribe-->
+    <section id="subscribe">
+        <div class="container-fluid text-center">
+            <h1 class="text-white">SUBSCRIBE TO OUR NEWSLETTER!</h1>
+            <div class="line"><span></span></div>
+            
+            <div class="row">
+                <div class="input-group col-md-8 col-md-offset-2">
+                  <input type="text" class="form-control" placeholder="Add Email..." name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">SUBSCRIBE!</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--   contact-->
+   <section id="contact">
+       <div class="container text-center">
+          <div class="row">
+              <div class="col-xs-8 col-xs-offset-2">
+                   <h1 class="title">CONTACT US</h1>
+                   <p class="lead">Let us about your next project and we will let you know what we can do to help you!</p>
+                   <div class="line"><span></span></div>
+                   <div class="row">
+                     <div class="col-xs-12">
+                          <form>
+                               <input type="text" placeholder="Name" class="form-control">
+                               <input type="text" placeholder="Email Address" class="form-control">
+                               <input type="text" placeholder="Phone Number" class="form-control">
+                               <input type="text" placeholder="Message" class="form-control">
+                               <button type="submit" class="btn pull-left">SEND</button>
+                          </form>
+                     </div>
+                   </div>
+              </div>
+          </div>
+       </div>
+   </section>
+<!--buy-->
+  <div id="buy">
+      <div class="container-fluid text-center text-white">
+          <a href="" class="h2">Buy Vitality Now!</a>
+      </div>
+  </div>
+<!--   footer-->
+   <footer>
+       <div class="container-fluid text-center">
+           <div class="row">
+               <div class="col-md-4 item">
+                   <p class="h3"><i class="fas fa-mobile-alt"></i> CALL</p>
+                   <p class="h4">555-123-4567</p>
+               </div>
+               <div class="col-md-4 item">
+                   <p class="h3"><i class="fas fa-map-marker-alt"></i> VISIT</p>
+                   <p class="h4">3481 Melrose Place <br>Beverly Hills, CA 90210</p>
+               </div>
+               <div class="col-md-4 item">
+                   <p class="h3"><i class="fas fa-envelope"></i> EMAIL</p>
+                   <p class="h4">mail@example.com</p>
+               </div>
+           </div>
+           <div class="social">
+               <i class="fab fa-facebook-f fa-2x"></i>
+               <i class="fab fa-twitter fa-2x"></i>
+               <i class="fab fa-linkedin-in fa-2x"></i>
+           </div>
+           <p class="copyright">&copy; 2019 Start Bootstrap</p>
+       </div>
+   </footer>
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
