@@ -1,0 +1,696 @@
+/*general-website*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'lato';
+}
+
+.text-white{
+    color: whitesmoke;
+}
+
+.red-color{
+    color: #FF432E !important;    
+}
+.red-color-hover:hover{
+    color: #FF432E !important;
+}
+.red-bg{
+    background-color: #FF432E !important;
+}
+.red-bg-hover{
+    background-color: #FF432E !important;
+    color: whitesmoke !important;
+    transition: 300ms all;
+}
+.red-bg-hover:hover{
+    background-color: transparent !important;
+    border: 1px solid rgba(0,0,0,.8);
+}
+.red-bg-opacity{
+    background-color: rgba(255, 67, 46,.7) !important;
+}
+.red-bd{
+    border: 1px solid #FF432E !important;
+}
+
+#feature, #portfolio, #about, #service, #team, #news, #partner{
+    padding-top: 4%;
+}
+#pricing .container-fluid, #contact .container-fluid{
+    padding-top: 4%;
+}
+#portfolio h1.title + p, #about h1.title + p, #team h1.title + p, #pricing h1.title + p, #news h1.title + p, #partner h1.title + p, #contact h1.title + p{
+    font-size: 17px;
+    margin-bottom: 3%;
+}
+#team .owl-dot.active, #pricing .owl-dot.active, #news .owl-dot.active, #testimonial .owl-dot.active, #partner .owl-dot.active{
+    background-color: tomato;
+    margin: 3px;
+    padding: 4px !important;
+    border-radius: 5px;
+}
+#team .owl-dot.active span, #pricing .owl-dot.active span, #news .owl-dot.active span, #testimonial .owl-dot.active span, #partner .owl-dot.active span{
+    background-color: whitesmoke;
+}
+
+/*pre-load*/
+.pre-load{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    z-index: 9999;
+}
+
+/*nav*/
+nav.bg-transparent{
+    background-color: transparent !important;
+    padding: 15px;
+}
+nav.bg-black{
+    background-color: black !important;
+    padding: 0px;
+}
+nav.navbar{
+    border: none;
+    transition: 250ms all;
+}
+nav .navbar-brand{
+    font-family: 'Lobster';
+    font-size: 35px;
+}
+nav .navbar-collapse a{
+    font-size: 12px;
+    color: whitesmoke !important;
+    font-weight: 600;
+}
+nav .navbar-nav li.active{
+    background-color: #FF432E !important;
+    color: whitesmoke !important;
+}
+/*site*/
+#site .item .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#site .item{
+    background-size: cover;
+    height: 70vh;
+    background-position: center center;
+}
+#site .item-1{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/header-bg-1.jpg');
+}
+#site .item-2{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/header-back.png');
+}
+#site .item-3{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images//galaxy.jpg');
+}
+#site .item-3 a:first-child{
+    padding: 12px 10px;
+    font-size: 17px;
+    transition: 200ms all;
+    margin-left: 5px;
+}
+
+#site .item a{
+    padding: 12px 10px;
+}
+#site .live-demo{
+    padding: 12px 10px;
+    font-size: 17px;
+    transition: 200ms all;
+    margin-left: 5px;
+}
+#site .live-demo:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+#site a.carousel-control{
+    background-image: none !important;
+}
+#site a.carousel-control > span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    position: absolute;
+    font-size: 50px;
+}
+
+/*feature*/
+
+#feature .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#feature .item .icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#feature .item .icon:hover{
+    
+}
+#feature .item .icon::after{
+    content: '';
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    background-color: inherit;
+    z-index: -1;
+    transition: .6s all;
+    opacity: 0;
+}
+#feature .item:hover .icon::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+#feature .buy{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/parallax/call-to.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#feature .buy .wrapper{
+    padding: 4% 0 3% 0;
+}
+#feature .buy .wrapper a{
+    margin-top: 1%;
+    padding: 1%;
+}
+
+/*portfolio*/
+#portfolio{
+    background-color: #f7f7f7;
+}
+#portfolio .item{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .item .wrapper{
+    position: absolute;
+    opacity: 0;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition: 1000ms all;
+}
+#portfolio .item .wrapper p{
+    background-color: whitesmoke;
+    color: black;
+    padding: 7px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#portfolio .item:hover .wrapper{
+    opacity: 1;
+}
+#portfolio .item img{
+    transition: 1s all;
+}
+#portfolio .item:hover img{
+    transform: scale(1.5)
+}
+
+
+/*about*/
+#about .about-thumbnail .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#about .lead{
+    margin-bottom: 10px;
+}
+#about .line{
+    width: 30px;
+    height: 3px;
+    transition: 200ms all;
+    padding: 0;
+    margin-top: 0;
+}
+#about .item:hover .line{
+    width: 100px;
+}
+ 
+#about .background{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/parallax/bg-01.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+#about .background .content-skill{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+}
+#about .background .content-carousel{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+}
+#about .background .content-carousel img{
+    width: 100%;
+}
+#about .background p{
+    margin-top: 1%;
+}
+#about .pg{
+    padding: 0;
+    height: 25px;
+    display: block;
+    width: 0%;
+    position: relative;
+    border: none;
+}
+#about .pg::after{
+    content:attr(data-skill);
+    position: absolute;
+    background-color: #ACB2B8;
+    padding: 7px;
+    top: 0;
+    left: 101%;
+    transform: translate(-100%,-15%);
+}
+#about #AboutCarousel ol li.active{
+    background-color: #FF432E;
+}
+
+
+
+/*service*/
+
+#service{
+    margin: 0;
+}
+#service .row{
+    padding: 0;
+    margin: 0;
+}
+#service .feature .item{
+    margin-bottom: 5%;
+    padding: 0;
+}
+#service .container .icon{
+    border: none;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    position: relative;
+}
+#service .container .icon::after{
+    height: 3px;
+    width: 0px;
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 120%;
+    transition: 250ms all;
+}
+#service .container .item:hover .icon::after{
+    width: 100%;
+}
+#service .body-item{
+    margin-left: 3%;
+}
+#service .container .item:hover .red-hover-icon{
+    color: #FF432E !important;
+    background-color: transparent !important;
+}
+#service .background-service{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/parallax/bg-02.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#service .background-service .item{
+    padding: 5% 2%;
+} 
+#service .background-service .wrapper{
+    background-color: rgba(0,0,0,.5);
+    padding: 14% 0 3% 0;
+}
+#service .background-service .number{
+    font-size: 45px;
+    font-weight: bold;
+}
+#service .background-service i{
+    font-size: 35px;
+}
+#service .background-service .lead{
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+/*team*/
+#team .item{
+    position: relative;
+}
+#team .wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 200ms all;
+    border: none;
+    opacity: 0;
+}
+#team .item:hover .wrapper{
+    opacity: 1;
+}
+#team .wrapper p{
+    color: whitesmoke;
+}
+#team .wrapper .h1 + p{
+    font-size: 17px;
+}
+#team .wrapper i{
+    font-size: 32px;
+    color: white;
+    display: inline-block;
+}
+#team .item:hover .wrapper{
+    animation: animated1 .7s linear;
+}
+
+/*pricing*/
+#pricing{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/parallax/pricing-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#pricing .container-fluid{
+    padding-bottom: 3%;
+}
+#pricing .panel{
+    border: none;
+    margin: 0;
+}
+
+/*news*/
+#news a{
+    text-decoration: none;
+}
+#news .image{
+    position: relative;
+}
+#news .wrapper{
+    position: absolute;
+    padding: 5px 10px;
+    top: 5%;
+    left: 5%;
+}
+#news .wrapper .day{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#news .item:hover .wrapper{
+    animation: animated1 1s linear;
+}
+@keyframes animated1{
+    0%{
+        transform: scale(.7);
+        opacity: 0;
+    }
+    20%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(1);
+    }
+    40{
+        transform: scale(.7);
+    }
+    50%{
+        transform: scale(.7);
+    }
+    70%{
+        transform: scale(.9);
+    }
+    80%{
+        transform: scale(1);
+    }
+
+    
+}
+/*testimonial*/
+#testimonial{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/parallax/testimonial-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#testimonial .container-fluid{
+    padding: 5% 0;
+}
+#testimonial .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#testimonial p{
+    margin: 2% 0;
+}
+#testimonial .name{
+    font-family: 'Lobster';
+}
+#testimonial img{
+    width: 150px;
+}
+
+#testimonial .owl-nav{
+    font-size: 70px;
+    color: #FF432E;
+}
+#testimonial .owl-nav .owl-prev span{
+    left: 0% !important;
+    position: absolute;
+    top: 50%;
+}
+#testimonial .owl-nav .owl-next span{
+    position: absolute;
+    right: 0 !important;
+    top: 50%;
+}
+
+/*partner*/
+#partner{
+    padding-bottom: 3%;
+}
+/*contact*/
+#contact{
+    background-image: url('http://demo.themefisher.com/themefisher/fame/images/parallax/contact-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contact form input[type='text']{
+    padding: 4% 2%;
+    font-size: 20px;
+    margin: 1% 0;
+}
+#contact form textarea{
+    font-size: 20px;
+}
+#contact form{
+    position: relative;
+    padding-bottom: 5%;
+}
+#contact button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 15px;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    padding: 1% 0;
+}
+
+footer a{
+    color: whitesmoke;
+}
+/*responsive*/
+@media screen and (min-width: 320px){
+    #site .item h1{
+        font-size: 30px;
+    }
+    #site .item h1 + p{
+        font-size: 17px;
+    }
+    
+    #portfolio .item .wrapper a{
+        background-color: whitesmoke;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    #portfolio .item .wrapper a i{
+        display: inline-block;
+        font-size: 15px;    
+    }
+    
+    #contact form, #contact form .body-text, #contact form .body-text div{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #contact form .body-area, #contact form .body-area div{
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    #contact .work{
+        padding: 2% 6%;
+    }
+    
+    button.navbar-toggle span{
+        background-color: whitesmoke;
+    }
+    
+    #feature .buy .wrapper p{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (min-width: 375px){
+    
+    footer .col-sm-4{
+        text-align: center;
+    }
+    
+}
+@media screen and (min-width: 414px){
+    #site .item h1{
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    #site .item h1 + p{
+        font-size: 30px;
+        padding: 1%;
+        letter-spacing: 1px;
+    }
+    
+    #portfolio .item .wrapper a{
+        background-color: whitesmoke;
+        padding: 20px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    #portfolio .item .wrapper a i{
+        display: inline-block;
+        font-size: 23px;
+    }
+
+    #feature .buy .wrapper p{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (min-width: 600px){
+}
+@media screen and (min-width: 768px){
+    
+}
+@media screen and (min-width: 1280px){
+    nav.navbar{
+        background-color: transparent;
+    }
+    .navbar-nav{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #contact form, #contact form .body-text, #contact form .body-text div{
+        padding-left: 0;
+    }
+    #contact form .body-area, #contact form .body-area div{
+        padding-right: 0%;
+        padding-left: 5%;
+    }
+    #contact .work{
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+    #contact .work .pull-right{
+        margin-right: 3%;
+    }
+    
+}
+@media only screen and (width: 768px) {
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-nav li{
+      width: 100%;   
+      padding-left: 0;
+      margin-left: -10px;
+  }
+  
+}
+
+/*--*/
+.animated.flipInX{
+  animation-duration: 2s;
+  display: inline-block;
+}
